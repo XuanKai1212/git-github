@@ -98,7 +98,7 @@ git status
 **（1）先在网页上创建仓库**
 
 打开 <https://github.com/new>，填写：
-- Repository name：`aiops-agent-platform`
+- Repository name
 - 选 Public 或 Private
 - ⚠️ **"Add a README"、".gitignore"、"License" 三项都不要勾选**（因为你本地已经有了，勾了会造成冲突）
 
@@ -108,7 +108,7 @@ git status
 
 ```powershell
 # 告诉 git，远程仓库在哪（origin 是这个地址的简称）
-git remote add origin https://github.com/XuanKai1212/aiops-agent-platform.git
+git remote add origin <仓库地址>
 
 # 推送！-u 表示记住对应关系，以后直接 git push 就行
 git push -u origin main
@@ -130,7 +130,7 @@ To https://github.com/XuanKai1212/aiops-agent-platform.git
 ## 三、以后每次改完代码（日常只需 3 条命令）
 
 ```powershell
-cd D:\大模型项目\aiops-agent-platform
+cd <项目文件夹>
 
 git add .                          # ① 把所有改动放进暂存区
 git commit -m "修复了XX问题"         # ② 提交，写清这次改了什么
@@ -179,7 +179,7 @@ VS Code 左侧的**源代码管理**图标（带分叉的那个）：
 
 ---
 
-## 五、常见错误速查（你这次遇到的全在里面）
+## 五、常见错误速查
 
 ### ❌ `SSL certificate problem: unable to get local issuer certificate`
 
